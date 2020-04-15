@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+
+void tukar (int *t, int *p){
+tukar = *t;
+*t = *p;
+*p = tukar;}
+
+int main(){
+int x = 10;
+int y = 15;
+
+tukar (&x,&y);
+
+}
