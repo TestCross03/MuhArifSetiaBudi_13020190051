@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+int faktor(int t){
+	if (t==0||t==1){
+		return (1);
+	}else{
+		return (t*faktor(t-1))  ;
+	}
+}
+int main(){
+	int i;
+	int jumlah;
+	cin >> i;
+		jumlah = faktor(i);
+	cout << jumlah;
+	return 0;
+}
